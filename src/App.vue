@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <PxPresentation background=""></PxPresentation>
+    <PxEducation></PxEducation>
+    <PxComponents></PxComponents>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import PxPresentation from "@/components/PxPresentation";
+import PxEducation from "@/components/PxEducation";
+import PxComponents from "@/components/PxComponents"
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    PxPresentation,
+    PxEducation,
+    PxComponents
   }
 };
 </script>
@@ -23,6 +28,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+body{
+  margin: 0;
 }
 </style>
