@@ -7,14 +7,14 @@
         
     </section>
     <p class="w-full mb-10">The following tools/softwares, are those things I can use with no problems every day, I have experience on every of the next points:</p>
-    <div v-for="(tool, index) in tools" :key="index" class="flex">
-        <div v-for="know in tool" :key="know.name" class="w-1/3 ml-20 mb-10">
+    <div class="flex flex-wrap">
+        <div v-for="(tool, index) in tools" :key="index" class="sm:w-full md:w-1/2 lg:w-1/3 px-20">
             <div class="max-w-sm rounded overflow-hidden shadow-lg mr-0">
-                <img class="w-1/3 mr-auto ml-auto" :src="know.image" :alt="know.name">
+                <img class="w-1/3 mr-auto ml-auto" :src="tool.image" :alt="tool.name">
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">{{know.name}}</div>
+                    <div class="font-bold text-xl mb-2">{{tool.name}}</div>
                     <p class="text-gray-700 text-base">
-                        {{know.description}}
+                        {{tool.description}}
                     </p>
                 </div>
             </div>
@@ -33,7 +33,7 @@ export default {
                 alt: "Dev logo"
             },
             tools: [
-                [{
+                {
                     image: require("@/assets/powerbi.png"),
                     name: "Power BI",
                     description: "One of the best BI software which provides interactive tools' visualizations and capability to develop Business Intelligence, it is familiar and friendly so the user can create their own reports"
@@ -47,8 +47,8 @@ export default {
                     image: require("@/assets/html.png"),
                     name: "HTML5",
                     description: "HTML is necesary to create the structure of every web page, even if you use a front-end framework as this page does it, you need to know html"
-                }],
-                [{
+                }
+                ,{
                     image: require("@/assets/blazor.png"),
                     name: "Blazor",
                     description: "It is the new Microsft's solution to create back and front end using their own language which is C# and .NET core."
@@ -62,9 +62,9 @@ export default {
                     image: require("@/assets/cplusplus.png"),
                     name: "C++",
                     description: "It's the first programming language I learned, it gaves me the programming's fundaments, and actually I can develop desktop solutions"
-                }]
+                }
                 ,
-                [{
+                {
                     image: require("@/assets/csharp.png"),
                     name: "C#",
                     description: "This is my most used backend language, I use it with .NET Core or .NET Framework; a great part of the projects which I have developed were created using C# .NET Core"
@@ -80,9 +80,9 @@ export default {
                     image: require("@/assets/js.png"),
                     name: "JavaScript",
                     description: "Really helpfull language when you are developing web pages because it helps to manipulate the DOM and integrate the result of requests called to multiple API's to the DOM. I have used it to implement some fron-end javascript frameworks"
-                }]
+                }
                 ,
-                [{
+                {
                     image: require("@/assets/logo.png"),
                     name: "Vue",
                     description: "My favorite front-end javascript framework, it helps to create a better markup architechture in an easier way. As additional data, this site was created using Vue.JS"
@@ -98,7 +98,7 @@ export default {
                     image: require("@/assets/tailwind.png"),
                     name: "Tailwindcss",
                     description: "It is a great options to create styles with a CSS framework, it has simple classes which represents specified selector's properties. Bootstrap has pre-builded components, on the other side, tailwind has pre-builded classes which helps to create the component"
-                }]
+                }
             ]
         }
     }
