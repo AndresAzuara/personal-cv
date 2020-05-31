@@ -8,7 +8,7 @@
     </section>
     <p class="w-full mb-10">The following tools/softwares, are those things I can use with no problems every day, I have experience on every of the next points:</p>
     <div class="flex flex-wrap">
-        <div v-for="(tool, index) in tools" :key="index" class="sm:w-full md:w-1/2 lg:w-1/3 px-20">
+        <div v-for="(tool, index) in tools" :key="index" class="sm:w-full md:w-1/2 lg:w-1/3 px-20 py-10">
             <div class="max-w-sm rounded overflow-hidden shadow-lg mr-0">
                 <img class="w-1/3 mr-auto ml-auto" :src="tool.image" :alt="tool.name">
                 <div class="px-6 py-4">
