@@ -1,5 +1,5 @@
 <template>
-    <section class="flex flex-wrap" id="education">
+    <section class="flex flex-wrap px-5" id="education">
         <div style="padding-left:0 3%" class="sm:w-full md:w-1/2 lg:w-1/2 mt-20">
             <h1>
                 Informatic Engineering

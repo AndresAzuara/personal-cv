@@ -1,9 +1,9 @@
 <template>
     <section id="presentation">
-        <div class="information">
+        <div class="information px-5">
             <h1>{{this.name}}</h1>
-        <h3>{{this.scholarity}}</h3>
-        <h4>{{this.nacionality}} -- {{this.phoneNumber}} -- <a href="mailto:andres.azuara.portillo@outlook.com">{{this.email}}</a></h4>
+            <h3>{{this.scholarity}}</h3>
+            <h4>{{this.nacionality}} -- {{this.phoneNumber}} -- <a href="mailto:andres.azuara.portillo@outlook.com">{{this.email}}</a></h4>
         </div>
     </section>
 </template>
@@ -37,6 +37,10 @@ export default {
         background-image: url("./../assets/mobile-presentation-background.jpg");
         background-size: cover;
         color: #1687a7
+    }
+
+    a{
+        font-size: 20px;
     }
 }
 
