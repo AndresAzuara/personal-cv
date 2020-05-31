@@ -1,9 +1,9 @@
 <template>
     <section id="presentation">
-        <div class="information px-5">
+        <div class="information">
             <h1>{{this.name}}</h1>
-            <h3>{{this.scholarity}}</h3>
-            <h4>{{this.nacionality}} -- {{this.phoneNumber}} -- <a href="mailto:andres.azuara.portillo@outlook.com">{{this.email}}</a></h4>
+        <h3>{{this.scholarity}}</h3>
+        <h4>{{this.nacionality}} -- {{this.phoneNumber}} -- <a href="mailto:andres.azuara.portillo@outlook.com">{{this.email}}</a></h4>
         </div>
     </section>
 </template>
@@ -40,7 +40,7 @@ export default {
     }
 
     a{
-        font-size: 20px;
+        font-size: .7em;
     }
 }
 
