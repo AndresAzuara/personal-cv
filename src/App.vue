@@ -29,8 +29,8 @@ export default {
     return {
       enterprises: [
             {
-                name: "Bosch",
-                position: ".NET Core Developer",
+                name: "Robert Bosch",
+                position: ".NET Core Developer (Intern)",
                 time: "1 year",
                 tasks: [
                     "Colaborate with web pages design in front and back end",
@@ -39,6 +39,28 @@ export default {
                     "Administrate the database according to user's requirements",
                     "Perform tests of my own solutions and my co-workers solutions"
                 ]
+            },
+            {
+              name: "SVAM International",
+              position: ".NET Core Developer",
+              time: "3 Months",
+              tasks: [
+                  "Design and Development of database",
+                  "Backend Development using .NET Core 2.1+",
+                  "Frontend Development using Angular"
+              ]
+            },
+            {
+              name: "Robert Bosch",
+              position: "Full Stack Web Developer",
+              time: "October 2020 - Actually",
+              tasks: [
+                  "Design and Development of database",
+                  "Backend Development using .NET Core/Framework",
+                  "Support to legacy applications using .NET Framework",
+                  "Deploy and support applications through Jenkins and Octopus",
+                  "Ticket resolution through SMT"
+              ]
             }
         ]
     }
